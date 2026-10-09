@@ -1,0 +1,35 @@
+:root{--ink:#111;--soft:#f5f5f7;--accent:#0a84ff}
+body{font-family:"Helvetica Neue",Arial,sans-serif;color:var(--ink);padding-top:64px}
+.navbar{background:rgba(255,255,255,.92);backdrop-filter:blur(10px);border-bottom:1px solid #e5e5e5;height:64px}
+.navbar-brand{font-weight:800;letter-spacing:-.5px;font-size:1.5rem}
+.nav-link{font-size:.9rem;font-weight:500}
+.slide{height:78vh;min-height:460px;color:#fff;display:flex;align-items:center;text-align:center}
+.s1{background:radial-gradient(circle at 70% 30%,#2b4a6f,#0b1220 70%)}
+.s2{background:radial-gradient(circle at 30% 40%,#5b3a7a,#120b1c 70%)}
+.s3{background:radial-gradient(circle at 60% 60%,#1f6f5b,#06140f 70%)}
+.slide h1{font-size:clamp(2.2rem,6vw,4.5rem);font-weight:700;letter-spacing:-1.5px}
+.slide .bi-big{font-size:5rem;opacity:.9}
+.btn-pill{border-radius:50rem;padding:.6rem 1.6rem;font-weight:500}
+.cta{background:var(--soft)}
+.cta-box{background:#000;color:#fff;border-radius:1.5rem;padding:4rem 2rem}
+.card-p{border:0;background:var(--soft);border-radius:1rem;transition:transform .2s}
+.card-p:hover{transform:translateY(-4px)}
+.thumb{height:190px;display:flex;align-items:center;justify-content:center;font-size:4.5rem;color:#333}
+.nav-pills .nav-link{color:var(--ink);border-radius:50rem}
+.nav-pills .nav-link.active{background:var(--ink)}
+.accordion-button:not(.collapsed){background:var(--soft);color:var(--ink);box-shadow:none}
+footer{background:#111;color:#aaa}
+footer a{color:#aaa;text-decoration:none}footer a:hover{color:#fff}
+.footer-logo{display:block;height:40px;width:auto;max-width:100%;object-fit:contain;margin-bottom:1rem}
+
+/* Carousel rapih */
+.slide{height:560px;min-height:0;padding-bottom:3rem;overflow:hidden}
+.slide-img{display:block;margin:0 auto;width:auto;max-width:100%;max-height:340px;object-fit:contain;background:#fff;border-radius:1.5rem;padding:0.5rem}
+.carousel-control-prev,.carousel-control-next{width:3rem}
+@media(max-width:767.98px){.slide{height:640px;padding-top:1rem}.slide-img{max-height:220px}.slide h1{font-size:2rem}}
+/* Card rapih */
+.card-img-box{height:200px;background:#fff;border-radius:1rem 1rem 0 0;padding:.75rem;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.card-img-box img{max-width:100%;max-height:100%;object-fit:contain}
+.card-name{line-height:1.25;min-height:2.5em}
+/* Product badges */
+.badge-sm{font: size 0.8em;font-weight:600;padding:.4em .7em}

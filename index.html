@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DJI Indonesia - Drone, Camera & Gimbal Stabilizer</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+<link href="style.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- 1. NAVBAR -->
+<nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container">
+    <button class="btn border-0 d-lg-none me-2" data-bs-toggle="offcanvas" data-bs-target="#menuCanvas" aria-label="Menu"><i class="bi bi-list fs-3"></i></button>
+    <a class="navbar-brand" href="#">
+      <img src="dji-logo.png" alt="DJI" class="dji-logo" style="height: 42px; width: auto;">
+    </a>
+    <div class="collapse navbar-collapse">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Consumer</a>
+          <ul class="dropdown-menu border-0 shadow">
+            <li><a class="dropdown-item" href="#produk">Drone</a></li>
+            <li><a class="dropdown-item" href="#produk">Action Camera</a></li>
+            <li><a class="dropdown-item" href="#produk">Dreadlocks</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#produk">Accessories</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="#produk">Professional</a></li>
+        <li class="nav-item"><a class="nav-link" href="#produk">Promo <span class="badge badge-sm text-bg-danger">New</span></a></li>
+        <li class="nav-item"><a class="nav-link" href="#faq">Support</a></li>
+      </ul>
+    </div>
+    <div class="ms-auto d-flex align-items-center gap-1">
+      <button class="btn border-0" data-bs-toggle="tooltip" title="Search products"><i class="bi bi-search fs-5"></i></button>
+      <button class="btn border-0 d-none d-sm-inline" data-bs-toggle="tooltip" title="Account"><i class="bi bi-person fs-5"></i></button>
+      <button class="btn border-0 position-relative" data-bs-toggle="offcanvas" data-bs-target="#cartCanvas" aria-label="Shopping Cart">
+        <i class="bi bi-bag fs-5"></i>
+        <span id="cartCount" class="position-absolute top-0 start-100 translate-middle badge rounded-pill text-bg-primary">0</span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- 2. CAROUSEL -->
+<div id="hero" class="carousel slide carousel-fade" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button data-bs-target="#hero" data-bs-slide-to="0" class="active"></button>
+    <button data-bs-target="#hero" data-bs-slide-to="1"></button>
+    <button data-bs-target="#hero" data-bs-slide-to="2"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active"><div class="slide s1"><div class="container"><div class="row align-items-center g-4">
+      <div class="col-md-6 order-2 order-md-1 text-md-start">
+        <h1>DJI Mavic 4 Pro</h1><p class="fs-5">Spin Your World</p>
+        <a href="#produk" class="btn btn-light btn-pill me-2">Buy</a><a href="#cta" class="btn btn-outline-light btn-pill">Learn More</a>
+      </div>
+      <div class="col-md-6 order-1 order-md-2"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRms3MP8z2q6pjwoDbLAtxJu-UWa2NoxLRUvLscHlo3OQ&s=10" alt="DJI Mavic 4 Pro" class="slide-img" referrerpolicy="no-referrer"></div>
+    </div></div></div></div>
+    <div class="carousel-item"><div class="slide s2"><div class="container"><div class="row align-items-center g-4">
+      <div class="col-md-6 order-2 order-md-1 text-md-start">
+        <h1>DJI Air 3S</h1><p class="fs-5">Chase the View</p>
+        <a href="#produk" class="btn btn-light btn-pill me-2">Buy</a><a href="#cta" class="btn btn-outline-light btn-pill">Learn More</a>
+      </div>
+      <div class="col-md-6 order-1 order-md-2"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7yEVpnk4e_FUwrrZ22_y0XD5gaTg4JkxjoQTHi547fQ&s=10" alt="DJI Air 3S" class="slide-img" referrerpolicy="no-referrer"></div>
+    </div></div></div></div>
+    <div class="carousel-item"><div class="slide s3"><div class="container"><div class="row align-items-center g-4">
+      <div class="col-md-6 order-2 order-md-1 text-md-start">
+        <h1>Osmo 360 II</h1><p class="fs-5">All Angles. All Epic.</p>
+        <a href="#produk" class="btn btn-light btn-pill me-2">Buy</a><a href="#cta" class="btn btn-outline-light btn-pill">Learn More</a>
+      </div>
+      <div class="col-md-6 order-1 order-md-2"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSi5MiDS_0CbhhyIQNK95hQIMoHkkNw01zPPnRMTg0vdQ&s=10" alt="Osmo 360 II" class="slide-img" referrerpolicy="no-referrer"></div>
+    </div></div></div></div>
+  </div>
+  <button class="carousel-control-prev" data-bs-target="#hero" data-bs-slide="prev"><span class="carousel-control-prev-icon"></span></button>
+  <button class="carousel-control-next" data-bs-target="#hero" data-bs-slide="next"><span class="carousel-control-next-icon"></span></button>
+</div>
+
+<!-- 3. HERO CTA -->
+<section id="cta" class="cta py-5">
+  <div class="container">
+    <div class="cta-box text-center">
+      <h2 class="display-5 fw-bold">Capture the world from a new angle</h2>
+      <p class="lead text-secondary mx-auto" style="max-width:560px">Free shipping throughout Indonesia and a 1-year official warranty on all products.</p>
+      <div class="progress mx-auto my-4" style="max-width:360px;height:6px" role="progressbar" aria-label="Promo Quota"><div class="prgress-bar bg-primary" style="width:72%"></div></div>
+      <p class="small text-secondary">72% of this month's promo quota has already been used.</p>
+      <a href="#produk" class="btn btn-primary btn-pill btn-lg me-2"> <i class="bi bi-bag"></i> Shop Now</a>
+      <button class="btn btn-outline-light btn-pill btn-lg" data-bs-toggle="modal" data-bs-target="#videoModal"><i class="bi bi-play-circle me-1"></i>Watch Video</button>
+    </div>
+  </div>
+</section>
+
+<!-- 4. PRODUCT SECTION -->
+<section id="produk" class="py-5">
+  <div class="container">
+    <nav aria-label="breadcrumb"><ol class="breadcrumb small"><li class="breadcrumb-item"><a href="#">Home</a></li><li class="breadcrumb-item active">Products</li></ol></nav>
+    <div class="d-flex flex-wrap justify-content-between align-items-center mb-4 gap-3">
+      <h2 class="fw-bold m-0">Featured Products</h2>
+      <ul class="nav nav-pills" id="filter">
+        <li class="nav-item"><button class="nav-link active" data-cat="all">All</button></li>
+        <li class="nav-item"><button class="nav-link" data-cat="drone">Drones</button></li>
+        <li class="nav-item"><button class="nav-link" data-cat="kamera">Cameras</button></li>
+        <li class="nav-item"><button class="nav-link" data-cat="aksesori">Accessories</button></li>
+      </ul>
+    </div>
+    <div class="row g-4" id="grid"></div>
+    <nav class="mt-5" aria-label="Page"><ul class="pagination justify-content-center">
+      <li class="page-item disabled"><a class="page-link">Prev</a></li>
+      <li class="page-item active"><a class="page-link" href="#">1</a></li>
+      <li class="page-item"><a class="page-link" href="#">2</a></li>
+      <li class="page-item"><a class="page-link" href="#">Next</a></li>
+    </ul></nav>
+  </div>
+</section>
+
+<!-- Featured Products (list group + card) -->
+<section class="cta py-5">
+  <div class="container">
+    <div class="row g-4 text-center">
+      <div class="col-6 col-md-3"><i class="bi bi-truck fs-1"></i><h3 class="h6 mt-2">Free Shipping</h3><p class="small text-secondary">Throughout Indonesia</p></div>
+      <div class="col-6 col-md-3"><i class="bi bi-shield-check fs-1"></i><h3 class="h6 mt-2">Official Warranty</h3><p class="small text-secondary">1 Year</p></div>
+      <div class="col-6 col-md-3"><i class="bi bi-arrow-repeat fs-1"></i><h3 class="h6 mt-2">Return within 7 days</h3><p class="small text-secondary">No hassle</p></div>
+      <div class="col-6 col-md-3"><i class="bi bi-headset fs-1"></i><h3 class="h6 mt-2">Support</h3><p class="small text-secondary">Monday - Saturday</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 6. ACCORDION / FAQ -->
+<section id="faq" class="py-5">
+  <div class="container" style="max-width:760px">
+    <h2 class="fw-bold text-center mb-4">FAQ</h2>
+    <div class="accordion accordion-flush" id="faqAcc">
+      <div class="accordion-item"><h3 class="accordion-header"><button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#f1">Do all products come with an official warranty?</button></h3>
+        <div id="f1" class="accordion-collapse collapse show" data-bs-parent="#faqAcc"><div class="accordion-body">Yes, every product comes with an official warranty for 1 year from the date of purchase.</div></div></div>
+      <div class="accordion-item"><h3 class="accordion-header"><button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#f2">How long does shipping take?</button></h3>
+        <div id="f2" class="accordion-collapse collapse" data-bs-parent="#faqAcc"><div class="accordion-body">Jabodetabek 1-2 business days, outside Java 3-7 business days.</div></div></div>
+      <div class="accordion-item"><h3 class="accordion-header"><button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#f3">Is it allowed to fly a drone anywhere?</button></h3>
+        <div id="f3" class="accordion-collapse collapse" data-bs-parent="#faqAcc"><div class="accordion-body">No. Avoid airport areas, military installations, and crowds. Learn the local drone flying regulations.</div></div></div>
+      <div class="accordion-item"><h3 class="accordion-header"><button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#f4">What payment methods are available?</button></h3>
+        <div id="f4" class="accordion-collapse collapse" data-bs-parent="#faqAcc"><div class="accordion-body">Bank transfer, credit card, e-wallet, and 0% installment plans.</div></div></div>
+    </div>
+    <div class="alert alert-primary mt-4 d-flex align-items-center" role="alert"><i class="bi bi-info-circle me-2"></i>The prices and products on this page are merely examples for a school assignment.</div>
+  </div>
+</section>
+
+<footer class="py-5">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-md-4">
+        <img src="dji-logo2.png" alt="DJI Logo" class="footer-logo">
+        <p class="small">DJI drone and camera store for Indonesian creators.</p>
+        <a href="https://www.instagram.com/djiglobal?utm_source=ig_web_button_share_sheet&srtk=ZDNlZDc0MzIxNw==" class="me-3 fs-5"><i class="bi bi-instagram"></i></a><a href="https://www.youtube.com/@DJI" class="me-3 fs-5"><i class="bi bi-youtube"></i></a><a href="https://www.tiktok.com/@dji_official?is_from_webapp=1&sender_device=pc" class="me-3 fs-5"><i class="bi bi-tiktok"></i></a><a href="#" class="fs-5"><i class="bi bi-whatsapp"></i></a>
+      </div>
+      <div class="col-6 col-md-2"><h6 class="text-white">Products</h6><ul class="list-unstyled small"><li><a href="#produk">Drones</a></li><li><a href="#produk">Cameras</a></li><li><a href="#produk">Accessories</a></li></ul></div>
+      <div class="col-6 col-md-2"><h6 class="text-white">Help</h6><ul class="list-unstyled small"><li><a href="#faq">FAQ</a></li><li><a href="#">Warranty</a></li><li><a href="#">Contact</a></li></ul></div>
+      <div class="col-md-4"><h6 class="text-white">Newsletter</h6>
+        <div class="input-group"><input class="form-control" type="email" placeholder="Your email" aria-label="Email"><button class="btn btn-primary" onclick="toast('Thank you, you are now subscribed.')">Subscribe</button></div></div>
+    </div>
+    <hr class="border-secondary my-4"><p class="small text-center m-0">&copy; 2026 DJI Indonesia. School project.</p>
+  </div>
+</footer>
+
+<!-- 5. MODAL: quick view -->
+<div class="modal fade" id="prodModal" tabindex="-1"><div class="modal-dialog modal-dialog-centered modal-lg"><div class="modal-content border-0 rounded-4">
+  <div class="modal-header border-0"><h5 class="modal-title" id="mTitle"></h5><button class="btn-close" data-bs-dismiss="modal"></button></div>
+  <div class="modal-body"><div class="row align-items-center g-4">
+    <div class="col-md-5"><div class="thumb rounded-4 bg-light" id="mIcon"></div></div>
+    <div class="col-md-7"><p id="mDesc"></p>
+      <ul class="list-group list-group-flush mb-3" id="mSpec"></ul>
+      <p class="fs-4 fw-bold" id="mPrice"></p>
+      <button class="btn btn-dark btn-pill" id="mAdd"><i class="bi bi-bag-plus me-1"></i>Add to Cart</button></div>
+  </div></div>
+</div></div></div>
+
+<!-- Modal video -->
+<div class="modal fade" id="videoModal" tabindex="-1"><div class="modal-dialog modal-dialog-centered modal-lg"><div class="modal-content bg-black text-white border-0">
+  <div class="modal-header border-0"><h5 class="modal-title">Product Video</h5><button class="btn-close btn-close-white" data-bs-dismiss="modal"></button></div>
+  <div class="modal-body p-0"><div class="ratio ratio-16x9"><iframe id="ytFrame" title="DJI video" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe></div></div>
+</div></div></div>
+
+<!-- 7. OFFCANVAS: cart -->
+<div class="offcanvas offcanvas-end" id="cartCanvas" tabindex="-1">
+  <div class="offcanvas-header"><h5 class="offcanvas-title">Shopping Cart</h5><button class="btn-close" data-bs-dismiss="offcanvas"></button></div>
+  <div class="offcanvas-body d-flex flex-column">
+    <div class="small mb-1" id="shipTxt"></div>
+    <div class="progress mb-3" style="height:6px"><div class="progress-bar" id="shipBar"></div></div>
+    <ul class="list-group list-group-flush flex-grow-1 overflow-auto" id="cartList"></ul>
+    <div class="d-flex justify-content-between fw-bold fs-5 py-3"><span>Total</span><span id="cartTotal">Rp0</span></div>
+    <button class="btn btn-dark btn-pill w-100" onclick="toast('Checkout is not yet available in this demo.')">Checkout</button>
+  </div>
+</div>
+
+<!-- Offcanvas: menu mobile -->
+<div class="offcanvas offcanvas-start" id="menuCanvas" tabindex="-1">
+  <div class="offcanvas-header">
+    <img src="dji-logo2.png" alt="DJI Logo" class="offcanvas-title" style="height: 30px; width: auto;">
+    <button class="btn-close" data-bs-dismiss="offcanvas"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div class="list-group list-group-flush">
+      <a href="#produk" class="list-group-item list-group-item-action" data-bs-dismiss="offcanvas"><i class="bi bi-airplane me-2"></i>Drones</a>
+      <a href="#produk" class="list-group-item list-group-item-action" data-bs-dismiss="offcanvas"><i class="bi bi-camera-video me-2"></i>Cameras</a>
+      <a href="#produk" class="list-group-item list-group-item-action" data-bs-dismiss="offcanvas"><i class="bi bi-plug me-2"></i>Accessories</a>
+      <a href="#faq" class="list-group-item list-group-item-action" data-bs-dismiss="offcanvas"><i class="bi bi-question-circle me-2"></i>Support</a>
+    </div>
+  </div>
+</div>
+
+<!-- Toast (additional component) -->
+<div class="toast-container position-fixed bottom-0 end-0 p-3">
+  <div id="toastEl" class="toast text-bg-dark border-0" role="status"><div class="d-flex"><div class="toast-body" id="toastBody"></div><button class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"></button></div></div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
